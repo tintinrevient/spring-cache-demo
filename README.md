@@ -14,17 +14,17 @@ curl -X POST http://localhost:8080/caches -H 'Content-Type: application/json' -d
 
 3. Query the saved data by its key:
 ```bash
-curl http://localhost:8080/caches/1
+curl http://localhost:8080/caches/key
 ```
 
 4. Update the saved data by its key:
 ```bash
-curl -X PUT http://localhost:8080/caches/1 -H 'Content-Type: application/json' -d '{"cachekey":"updatedKey", "cachevalue": "updatedValue", "type": "string"}'
+curl -X PUT http://localhost:8080/caches/key -H 'Content-Type: application/json' -d '{"cachevalue": "updatedValue", "type": "string"}'
 ```
 
 5. Delete the saved data by its key:
 ```bash
-curl -X DELETE http://localhost:8080/caches/1
+curl -X DELETE http://localhost:8080/caches/key
 ```
 
 ## References
