@@ -1,6 +1,6 @@
 # Spring Cache Demo
 
-## Test run
+## Test
 
 1. Start the embedded servlet container after starting MySQL:
 ```bash
@@ -25,6 +25,11 @@ curl -X PUT http://localhost:8080/features/key -H 'Content-Type: application/jso
 5. Delete the saved data by its key:
 ```bash
 curl -X DELETE http://localhost:8080/features/key
+```
+
+6. Check the cache:
+```bas
+curl http://localhost:8080/caches/key
 ```
 
 ## References

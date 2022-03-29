@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import javax.persistence.Id;
 import javax.persistence.Entity;
+import javax.persistence.Column;
+import java.io.Serializable;
 
 @Data
 @AllArgsConstructor
@@ -14,9 +16,8 @@ import javax.persistence.Entity;
 @ToString
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Cache {
+public class Feature implements Serializable {
     @Id
-    private String cachekey;
-    private String cachevalue;
-    private String type;
+    private String featureKey;
+    private String featureValue;
 }
