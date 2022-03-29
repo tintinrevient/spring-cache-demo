@@ -9,7 +9,7 @@
 
 2. Save the data:
 ```bash
-curl -X POST http://localhost:8080/caches -H 'Content-Type: application/json' -d '{"cachekey":"key", "cachevalue": "value", "type": "string"}'
+curl -X POST http://localhost:8080/features -H 'Content-Type: application/json' -d '{"featureKey":"key", "featureValue": "value"}'
 ```
 
 3. Query the saved data by its key:
