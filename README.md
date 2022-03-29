@@ -32,6 +32,23 @@ curl -X DELETE http://localhost:8080/features/key
 curl http://localhost:8080/caches/key
 ```
 
+7. Check the JMX monitor:
+```bash
+$ jps
+834 GradleDaemon
+8867 DemoApplication
+8855 GradleWrapperMain
+343 
+8893 Jps
+
+$ jconsole 8867
+```
+
+<p float="left">
+    <img src="pix/jmx.png" width="500" />
+</p>
+
 ## References
 * https://start.spring.io/
 * https://adoptopenjdk.net/installation.html
+* https://www.ehcache.org/documentation/3.2/107.html
