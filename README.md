@@ -28,7 +28,7 @@ curl -X DELETE http://localhost:8080/features/key
 ```
 
 6. Check the cache:
-```bas
+```bash
 curl http://localhost:8080/caches/key
 ```
 
@@ -45,7 +45,7 @@ $ jconsole 8867
 ```
 
 <p float="left">
-    <img src="pix/jmx.png" width="500" />
+    <img src="pix/jmx.png" width="600" />
 </p>
 
 ## References
